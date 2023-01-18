@@ -93,7 +93,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  min-width: 1600px;
+  max-width: 1600px;
   margin: 0 auto;
   padding: 200px 0;
 }
@@ -492,7 +492,7 @@ button {
 }
 .workers-pos:hover,
 .workers-pos:focus {
-  box-shadow: 2px 2px 2px 0 var(--text-footer);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 /* ----------------Постійні клієнти----------------- */
 .clients {
@@ -593,6 +593,7 @@ button {
   border-radius: 4px;
   position: absolute;
   transform: translate(-50%, -50%);
+  transition-property: transform;
 }
 .modal-close {
   position: absolute;
@@ -604,6 +605,7 @@ button {
   border-radius: 50%;
   background-color: transparent;
   cursor: pointer;
+  
 }
 .is-hidden {
   opacity: 0;
